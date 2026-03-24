@@ -54,10 +54,10 @@ A responsive, real-time weather dashboard built with React and the OpenWeatherMa
 
 📸 Screenshots
 
-![Autocomplete Dropdown](<assets/Screenshot 2026-03-24 105911.png>)
-![sidebar with the city search input](<assets/Screenshot 2026-03-24 105957.png>)
-![Hourly Forecast Sidebar](<assets/Screenshot 2026-03-24 110006.png>)
-![Temperature Chart](<assets/Screenshot 2026-03-24 110035.png>)
-![ Weather Card](<assets/Screenshot 2026-03-24 110045.png>)
+![Autocomplete Dropdown](src/screenshots/screenshot-2.png)
+![sidebar with the city search input](src/screenshots/screenshot-3.png)
+![Hourly Forecast Sidebar](src/screenshots/screenshot-4.png)
+![Temperature Chart](src/screenshots/screenshot-5.png)
+![Weather Card](src/screenshots/screenshot-6.png)
 
 [[Live demo](https://dpkalimbu-dev.github.io/Weather-Dashboard/)]
