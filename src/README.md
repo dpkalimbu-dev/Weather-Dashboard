@@ -53,12 +53,12 @@ A responsive, real-time weather dashboard built with React and the OpenWeatherMa
 - Smooth transition from skeleton to live data
 
 📸 Screenshots
+
 ![Autocomplete Dropdown](<src/assets/Screenshot 2026-03-24 105911.png>)
 ![sidebar with the city search input](<src/assets/Screenshot 2026-03-24 105957.png>)
 ![Hourly Forecast Sidebar](<src/assets/Screenshot 2026-03-24 110006.png>)
 ![Temperature Chart](<src/assets/Screenshot 2026-03-24 110035.png>)
 ![ Weather Card](<src/assets/Screenshot 2026-03-24 110045.png>)
-![ Full Dashboard View](<src/assets/Screenshot 2026-03-24 104421.png>)
 
 # Live demo
 
