@@ -1,16 +1,63 @@
-# React + Vite
+🌤️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, real-time weather dashboard built with React and the OpenWeatherMap API. It delivers live weather conditions, hourly forecasts, and an interactive temperature chart — all wrapped in a modern glassmorphism UI.
 
-Currently, two official plugins are available:
+🚀 Features
+🔍 Smart City Search
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Debounced autocomplete search (500ms delay) powered by the OpenWeatherMap Geocoding API
+- Displays up to 5 city suggestions with state and country badges
+- Full keyboard navigation support — ↑ ↓ to browse, Enter to select, Escape to dismiss
+- Mouse hover and click support with active highlight states
 
-## React Compiler
+📍 Auto Location Detection
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Uses the browser Geolocation API to detect and load the user's current city on page load
+- Gracefully falls back to a default city (Calgary) if location permission is denied
 
-## Expanding the ESLint configuration
+🌡️ Current Weather Display
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Shows city name, weather icon, temperature, and description
+- Displays humidity and wind speed in a clean stat grid
+- Dynamic weather-condition theming — card background and styling change based on live conditions (e.g. rain, clear, clouds, snow)
+
+📅 Hourly Forecast Sidebar
+
+- Displays the next 5 forecast intervals from the OpenWeatherMap Forecast API
+- Each entry shows: weather icon, time, temperature, feels-like temp, humidity, and wind speed
+- Fully responsive to the selected unit (metric/imperial)
+
+📈 24-Hour Temperature Chart
+
+- Interactive area chart built with Recharts
+- Gradient fill under the temperature curve for visual depth
+- Dynamic Y-axis labels that update with the selected unit
+- Custom-styled tooltip with rounded corners and soft shadow
+
+⚙️ Unit Toggle
+
+- One-click toggle between Celsius (°C) and Fahrenheit (°F)
+- All values across every component update simultaneously on change
+
+🕓 Recent Search History
+
+- Stores up to 3 unique recent searches in localStorage
+- Persists across browser sessions
+- Pill-style quick-select buttons for one-click reloading
+- One-click Clear History button
+
+💀 Skeleton Loading Screen
+
+- Custom Bootstrap placeholder-glow skeleton that mirrors the exact layout of the weather card
+- Prevents layout shift while API data is loading
+- Smooth transition from skeleton to live data
+
+📸 Screenshots
+
+![Autocomplete Dropdown](<assets/Screenshot 2026-03-24 105911.png>)
+![sidebar with the city search input](<assets/Screenshot 2026-03-24 105957.png>)
+![Hourly Forecast Sidebar](<assets/Screenshot 2026-03-24 110006.png>)
+![Temperature Chart](<assets/Screenshot 2026-03-24 110035.png>)
+![ Weather Card](<assets/Screenshot 2026-03-24 110045.png>)
+
+[[Live demo](https://dpkalimbu-dev.github.io/Weather-Dashboard/)]
